@@ -1,0 +1,128 @@
+:root{
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --clr-grey-1: #102a42;
+    --clr-grey-10: #f1f5f8;
+    --clr-black-1: black;
+}
+
+
+*,::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+h2{
+    color: black;
+    font-family: 'Kanit', sans-serif;
+}
+
+#logo{
+    height: 100px;
+    margin-left:45%;;
+}
+
+#image-bose{
+    margin-top: -30px;
+    display: block;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.section{
+    padding: 5rem 0;
+    margin-bottom: 50px;
+}
+
+.section-center{
+    width: 90vw;
+    margin: 5rem auto;
+    max-width: 1170px;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.gift-info{
+    font-style: italic;
+}
+
+.slogan{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#img-1{
+    height: 400px;
+}
+
+#img-2{
+    margin-left: -30px;
+}
+
+.gift-img{
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 800px){
+    .section-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 3rem;
+        width: 95vw;
+        max-width: 91vw;
+        max-height: 0vh;
+    }
+
+    .gift-img{
+        margin-bottom: 0;
+    }
+
+    .deadline{
+        display: flex;
+    }
+
+    .deadline-format{
+        box-shadow: 5px 5px 10px #888888;
+        background: var(--clr-black-1);
+        color: white;
+        margin-right: 1rem;
+        width: 5rem;
+        height: 5rem;
+        display: grid;
+        place-items: center;
+        text-align: 0.85rem;
+    }
+
+    .deadline-format span {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.85rem;
+    }
+    
+      .deadline h4:not(.expired) {
+        font-size: 2rem;
+        margin-bottom: 0.25rem;
+        letter-spacing: var(--spacing);
+      }
+}
+
+
